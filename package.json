@@ -1,0 +1,30 @@
+{
+  "name": "healthy-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "GROUP_NAME=test LAMBDA_NAME_RESTART_INSTANCE=FunctionName NODE_ENV=test  TABLE_NAME=testing-ping  mocha test/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.190.0",
+    "co": "^4.6.0",
+    "co-tchar": "^0.2.1",
+    "curl": "^0.1.4",
+    "dynamodb-data-types": "^3.0.0",
+    "dynamodb-marshaler": "^2.0.0",
+    "fixed-array": "^1.0.0",
+    "lambdifying": "0.0.3",
+    "parse-dynamodb-item": "0.0.1",
+    "promiseout": "0.0.2",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "aws-lambda-testing": "^0.2.5",
+    "nock": "^9.1.6",
+    "promout": "^0.1.0",
+    "proxyquire": "^1.8.0"
+  }
+}
