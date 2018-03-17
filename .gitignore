@@ -5,6 +5,7 @@
 !.elasticbeanstalk/*.global.yml
 # Logs
 .vscode
+*.zip
 logs
 *.log
 npm-debug.log*
